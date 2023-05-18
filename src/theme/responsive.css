@@ -1,0 +1,462 @@
+/*<-- ========== RESPONSIVE LAYOUT ========== -->*/
+/**/
+/*<-- ========== COMPONENTS ========== -->*/
+/*<-- Headbar -->*/
+.Headbar {
+  position: sticky;
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  padding: 24px 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center space-between;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  overflow: visible;
+  will-change: transform;
+}
+.Headbar_logo {
+  width: 36px;
+  height: 36px;
+}
+.Headbar_block {
+  width: auto;
+  height: 48px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: center flex-start;
+  align-items: center;
+}
+.AsideMenu_background {
+  background-color: rgba(230, 230, 230, 0.7);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 7;
+}
+.AsideMenu {
+  position: fixed;
+  overflow: hidden;
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 100vh;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  z-index: 8;
+  padding: 24px 40px;
+}
+@media (max-width: 500px) {
+  .Headbar {
+    padding: 24px 24px;
+  }
+  .Headbar_block {
+    gap: 6px;
+  }
+}
+.ProfileMenu {
+  position: fixed;
+  top: 80px;
+  right: 40px;
+  max-width: 330px;
+  min-width: 260px;
+  width: auto;
+  height: auto;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.ProfileMenu h2 {
+  text-align: center;
+  padding: 0 24px;
+}
+.ProfileMenu img {
+  opacity: 60%;
+}
+@media (max-width: 500px) {
+  .ProfileMenu {
+    right: 24px;
+  }
+}
+
+/*<-- Dashboard Nav -->*/
+.Nav {
+  width: 360px;
+  height: calc(100vh - 97px);
+  position: fixed;
+  left: 0;
+  top: 97px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  border-right: thin solid rgb(240, 240, 240);
+}
+.Nav_short {
+  width: 140px;
+}
+.Nav a {
+  padding: 12px 8px;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+.Nav a:hover {
+  background-color: rgba(240, 240, 240, 1);
+}
+.Nav a img {
+  opacity: 60%;
+  width: 24px;
+}
+.Nav a:hover img {
+  opacity: 100%;
+}
+.Nav a h3 {
+  display: flex;
+  align-items: center;
+}
+.Nav a:hover h3 {
+  color: rgb(0, 0, 0);
+}
+.Nav a.active {
+  background-color: rgb(61, 110, 255);
+  pointer-events: none;
+}
+.Nav a.active img {
+  opacity: 100%;
+  filter: invert(100%);
+}
+.Nav a.active h3 {
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1200px) {
+  .Nav {
+    width: 280px;
+    height: calc(100vh - 97px);
+    position: fixed;
+    left: 0;
+    top: 97px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .Nav_short {
+    width: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .Nav {
+    width: 100vw;
+    height: 64px;
+    position: fixed;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    border-top: thin solid rgb(240, 240, 240);
+    border-right: none;
+  }
+  .Nav a {
+    padding: 12px 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .Nav a img {
+    margin: 0;
+  }
+  .Nav a h3 {
+    display: none;
+  }
+}
+
+/*<-- Info page -->*/
+.Info_page {
+  display: flex;
+  flex-flow: column nowrap;
+  place-content: center flex-start;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+/*<-- Dashboard page -->*/
+.Dashboard_page {
+  margin-left: 360px;
+  padding: 40px;
+  overflow: auto;
+}
+.Dashboard_page_short {
+  margin-left: 140px;
+}
+@media (max-width: 1200px) {
+  .Dashboard_page {
+    margin-left: 280px;
+  }
+  .Dashboard_page_short {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .Dashboard_page {
+    margin-left: 0px;
+    margin-bottom: 64px;
+    padding: 24px 24px;
+  }
+}
+
+/*<-- ========== PAGES ========== -->*/
+/*<-- ========== LANDING ========== -->*/
+.Landing_hero {
+  position: relative;
+  width: 100%;
+  height: 880px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Landing_hero_flex {
+  position: absolute;
+  overflow: visible;
+  max-width: 1440px;
+  width: 80%;
+  height: 740px;
+  display: flex;
+  flex-direction: row;
+  place-content: flex-start space-between;
+  align-items: center;
+  margin-bottom: 140px;
+}
+.Landing_hero_flex div img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 48px;
+  margin-right: 48px;
+}
+.Landing_block {
+  position: relative;
+  width: 100%;
+  height: min-content;
+}
+
+@media (max-width: 1080px) {
+  .Landing_hero {
+    height: 800px;
+  }
+  .Landing_hero_flex {
+    height: 80%;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .Landing_hero_flex div {
+    text-align: center;
+    margin: 0;
+  }
+  .Landing_hero_flex div a {
+    margin: auto;
+  }
+  .Landing_hero_flex div button {
+    margin: 18px auto;
+  }
+  .Landing_hero_flex div img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 660px) {
+  .Landing_hero {
+    height: 700px;
+    display: flex;
+  }
+  .Landing_hero_flex {
+    width: 100%;
+    place-content: space-around;
+  }
+  .Landing_hero_flex div {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .Landing_hero {
+    height: 560px;
+    display: flex;
+  }
+  .Landing_hero_flex {
+    width: 100%;
+    place-content: space-evenly;
+  }
+  .Landing_hero_flex div {
+    width: 100%;
+    max-width: 80%;
+  }
+  .Landing_hero_flex div img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 12px;
+    margin-right: 0px;
+  }
+}
+
+/*<-- ========== AUTH ========== -->*/
+/*<-- Signin -->*/
+.Auth_form {
+  width: 80%;
+  max-width: 420px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+/*<-- ========== DASHBOARD ========== -->*/
+.flex-wrap-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+/*<-- File Card -->*/
+.FileCard {
+  height: 365px;
+  width: 312px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.1s;
+  display: flex;
+  border-radius: 0.4rem;
+}
+@media (max-width: 840px) {
+  .flex-wrap-list {
+    justify-content: center;
+  }
+}
+
+/*<-- Collections -->*/
+.Collections_StickyMenu {
+  margin-bottom: 22px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  gap: 4px;
+}
+.Collections_StickyMenu select {
+  width: auto;
+}
+.Collections_StickyMenu button {
+  width: 110px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*<-- Preview modal -->*/
+.PreviewModal {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.PreviewModal_container {
+  width: 80%;
+  max-width: 1400px;
+  min-width: 340px;
+  height: 80%;
+  max-height: 820px;
+  min-height: 620px;
+  border-radius: 0.6rem;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.Preview_header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Preview_header_buttons {
+  display: flex;
+  gap: 12px;
+}
+.Preview_header_buttons button {
+  margin-right: 0;
+  border-radius: 0.4rem;
+  width: auto;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Preview_header button img {
+  filter: invert(100%);
+}
+
+/*<-- DetailsEditable -->*/
+.DetailsEditable {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+}
+.DetailsEditable_header_buttons {
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 6px;
+}
+.DetailsEditable_header_buttons button {
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 0.4rem;
+}
+.DetailsEditable_form {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.DetailsEditable_form_block {
+  width: 100%;
+  max-width: 340px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/*<-- Explore -->*/
+.Explore {
+}

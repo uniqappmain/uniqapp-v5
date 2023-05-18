@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc162e5d.css",
+    "main.js": "/static/js/main.c28774af.js",
+    "static/media/ring.png": "/static/media/ring.846600b5ebcea46a3193.png",
+    "static/media/safe.svg": "/static/media/safe.4ab8966a78c0d7d532d3318a4eaf5c9a.svg",
+    "static/media/google.svg": "/static/media/google.30b82982173298da1a9c064b08b2ca3f.svg",
+    "static/media/house.svg": "/static/media/house.60f8c7fb5431a2fd0db53feb35c2a0e1.svg",
+    "static/media/collection.svg": "/static/media/collection.5c9c133c341d2a37bf3ec4d32af299e1.svg",
+    "index.html": "/index.html",
+    "static/media/compass.svg": "/static/media/compass.e7f79c3b8dcc3670383ecf88a6e78a35.svg",
+    "static/media/person-circle.svg": "/static/media/person-circle.b987e009f2d3ba3993fc93478e22b55e.svg",
+    "static/media/list.svg": "/static/media/list.f98b98b4905b36b844a65327ecaadc32.svg",
+    "static/media/x-lg.svg": "/static/media/x-lg.f520e54c746f7505bec401e45a68a2de.svg",
+    "static/media/arrow-left-short.svg": "/static/media/arrow-left-short.dd169f9b0bb3667366c2b518320f8416.svg",
+    "main.cc162e5d.css.map": "/static/css/main.cc162e5d.css.map",
+    "main.c28774af.js.map": "/static/js/main.c28774af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc162e5d.css",
+    "static/js/main.c28774af.js"
+  ]
+}
