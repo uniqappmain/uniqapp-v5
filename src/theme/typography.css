@@ -97,7 +97,7 @@ button {
 /*<-- ========== TYPOGRAPHY CLASS ========== -->*/
 /*<-- Font size -->*/
 .h1 {
-  font-size: var(--heading-h1-font-size);
+  font-size: 48px;
 }
 .h2 {
   font-size: var(--heading-h2-font-size);
@@ -255,4 +255,9 @@ button {
       var(--text-font-size-base) * var(--scale-factor-2) * var(--scale-factor-2)
     );
   }
+}
+
+/* Formats */
+.text-align-justify {
+  text-align: justify;
 }

@@ -23,8 +23,8 @@ const multiLanguage = {
         es: "Características",
       },
       6: {
-        en: "Search by ID",
-        es: "Buscar por ID",
+        en: "Shared Files",
+        es: "Archivos Compartidos",
       },
       7: {
         en: "Support",
