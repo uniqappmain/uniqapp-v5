@@ -1,3 +1,4 @@
+import "./normalize.css"
 import "./main.css";
 import "./typography.css";
 import "./formats.css";
