@@ -1,0 +1,30 @@
+Jul 4
+- Home tab. Home Cards.
+- Details Edit.
+- Details Explore & Modal.
+- Implement QR.
+
+Jul 5
+- About / Contact page
+- Support page
+- Privacy Terms page
+- Explore Demo page
+
+Jul 6
+- Implement Firebase.
+- Implement ImageCompressor.
+- Image uploader update.
+
+Jul 7
+- Shared files page.
+- Explore request.
+- Test all working.
+- Transfer modal.
+
+Jul 8
+- Fix any.
+- Settings page.
+- Admin page.
+
+Jul 9
+- Implement Google Books.

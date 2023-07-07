@@ -1,0 +1,25 @@
+To do:
+- Finish all pages design.
+    - Add New
+    - Details
+    - Home
+    - Explore Demo
+    - About
+    - Support
+    - Privacy Terms
+- Multilanguage.
+- Implement all router protection.      _/
+- Implement QR.
+- Implement Firebase.
+- Implement ImageCompressor.
+- Test all working.
+- Implement Google Books.
+- Implement Google Vision.
+- Implement Esmerald Calculator.
+
+BooksAPI: AIzaSyBtyIXpMAUbu0QZIcSMU5p_RvyD6BEBIe4
+https://www.googleapis.com/books/v1/volumes?q=harry+potter+askaban:keyes&key=AIzaSyBtyIXpMAUbu0QZIcSMU5p_RvyD6BEBIe4
+
+No API: https://www.googleapis.com/books/v1/volumes?q=harry+potter&callback=handleResponse
+
+https://www.googleapis.com/books/v1/volumes?q=9788496573369

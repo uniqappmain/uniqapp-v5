@@ -225,7 +225,7 @@ const Headbar = () => {
               {languageDB[8][language]}
             </button>
           </Link>
-          <Link to={"../../../dashboard/settings"} className="width-100">
+          {/* <Link to={"../../../dashboard/settings"} className="width-100">
             <button
               name="Settings"
               className="width-100 flex-center-center border-radius-2"
@@ -233,7 +233,7 @@ const Headbar = () => {
             >
               {languageDB[9][language]}
             </button>
-          </Link>
+          </Link> */}
           <button
             name="Log out"
             className="width-100 flex-center-center border-radius-2 button-dark"

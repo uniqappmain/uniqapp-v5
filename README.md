@@ -30,7 +30,8 @@ This project proposes a web application that allows managing and administering d
 
 Uniqapp is available on the web.\
 The host and the domain are sponsored by Netlify. The "build" folder contains the simplified static files for production.\
-Open [Uniqapp v4 Page](https://uniqapp-v4.netlify.app/) to view it in your browser.
+Open [Uniqapp v5 Page](https://uniqapp-v5.netlify.app/) to view the last version in your browser.
+Other version [Uniqapp v4 Page](https://uniqapp-v4.netlify.app/) to view it in your browser.
 
 ## Contact
 

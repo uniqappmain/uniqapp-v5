@@ -27,7 +27,7 @@ const NewFile = () => {
   /*<-- ========== FUNTIONS ========== -->*/
   /*<-- Setting current page -->*/
   useEffect(() => {
-    setInput({ ...input, subcategory: "any" });
+    //setInput({ ...input, subcategory: "any" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input.category]);
 
@@ -54,8 +54,8 @@ const NewFile = () => {
       </div>
       <div className="DetailsEditable_form margin-top-2">
         <div className="DetailsEditable_form_block">
-          <h3>Category and Visibility</h3>
           {/* ========== Category ========== */}
+          <label>Category</label>
           <select
             name="category"
             className="border-radius-2 border-color-2"
@@ -74,6 +74,7 @@ const NewFile = () => {
           {/* ========== Sub-Category ========== */}
           {input.category !== "generic" && (
             <>
+              <label>Sub-category</label>
               {/* Sub-Category Antique */}
               {input.category === "antique" && (
                 <select
@@ -174,7 +175,16 @@ const NewFile = () => {
             </>
           )}
           {/* ========== Sub-Category Close ========== */}
+          {/* Print - Book Smart */}
+          {input.subcategory === "book" && (
+            <div className="DetailsEditable_form_block margin-bottom-1">
+              <button className="button-blue padding-3 margin-0 border-radius-2">
+                Uniqapp Smart Book Finder
+              </button>
+            </div>
+          )}
           {/* ========== Visibility ========== */}
+          <label>Visibility</label>
           <select
             name="visibility"
             className="border-radius-2 border-color-2"
@@ -182,13 +192,14 @@ const NewFile = () => {
             onChange={handleChange}
           >
             <option value="private" defaultChecked={true}>
-              Private visibility
+              Private
             </option>
-            <option value="public">Public visibility</option>
+            <option value="public">Public</option>
           </select>
           {/* ========== Visibility Close ========== */}
+
           {/* ========== Photos ========== */}
-          <h3>Photos</h3>
+          <label>Photos</label>
           <input type="file" className="border-radius-2 border-color-2" />
           {/* ========== Photos Close ========== */}
         </div>
@@ -196,22 +207,23 @@ const NewFile = () => {
           {/* ============================================================ */}
           {/* ============================================================ */}
           {/* ========== Data ========== */}
-          <h3>Data</h3>
           {/* Name */}
+          <label>Name</label>
           <input
             name="name"
             type="text"
-            placeholder="Name"
+            placeholder=""
             className="border-radius-2 border-color-2"
             onChange={handleChange}
           />
           {/* Name Close */}
           {/* Description */}
+          <label>Description</label>
           <textarea
             name="description"
             type="text"
             rows={6}
-            placeholder="Description"
+            placeholder=""
             className="border-radius-2 border-color-2"
             onChange={handleChange}
           />
@@ -219,127 +231,160 @@ const NewFile = () => {
           {/* ========== Data Close ========== */}
           {/* ============================================================ */}
           {/* ============================================================ */}
-          {/* ========== Category Data ========== */}
-          {/* Antique Data Inputs */}
+          {/* ========== Category Any Data ========== */}
+          {/* Antique- Any Data Inputs */}
           {input.category === "antique" && (
             <div className="DetailsEditable_form_block">
               <input
-                name="antique-"
+                name="antique"
                 type="text"
-                placeholder="antique-"
+                placeholder="Antique Any"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
             </div>
           )}
-          {/* Antique Data Inputs Close */}
-          {/* Artwork Data Inputs */}
-          {input.category === "art" && (
+          {/* Antique - Any Data Inputs Close */}
+          {/* Artwork   Any Data Inputs */}
+          {input.category === "artwork" && (
             <div className="DetailsEditable_form_block">
+              <label>Author</label>
               <input
-                name="art-author"
+                name="artwork-any-author"
                 type="text"
-                placeholder="Author"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <label>Technique</label>
               <input
-                name="art-technique"
+                name="artwork-any-technique"
                 type="text"
-                placeholder="Technique"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
             </div>
           )}
-          {/* Artwork Data Inputs Close */}
-          {/* Gem Data Inputs */}
+          {/* Artwork - Any Data Inputs Close */}
+          {/* Gem - Any Data Inputs */}
           {input.category === "gem" && (
             <div className="DetailsEditable_form_block">
-              <h3>Gem Geometry [mm] [g]</h3>
+              <label>Gem Length [mm]</label>
               <input
-                name="gem-length"
+                name="gem-any-length"
                 type="number"
-                placeholder="Length"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <label>Gem Width [mm]</label>
               <input
-                name="gem-width"
+                name="gem-any-width"
                 type="number"
-                placeholder="Width"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <label>Gem Height [mm]</label>
               <input
-                name="gem-height"
+                name="gem-any-height"
                 type="number"
-                placeholder="Height"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <h5>Gem Weigth [g]</h5>
               <input
-                name="gem-weight"
+                name="gem-any-weight"
                 type="number"
-                placeholder="Weight"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
             </div>
           )}
-          {/* Gem Data Inputs Close */}
-          {/* Jewerly Data Inputs */}
+          {/* Gem - Any Data Inputs Close */}
+          {/* Jewerly - Any Data Inputs */}
           {input.category === "jewerly" && (
             <div className="DetailsEditable_form_block">
+              <label>Gems</label>
               <input
-                name="gems"
+                name="jewerly-any-gems"
                 type="text"
-                placeholder="Gems"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <label>Material</label>
               <input
-                name="material"
+                name="jewerly-any-material"
                 type="text"
-                placeholder="Material"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
             </div>
           )}
-          {/* Jewerly Data Inputs Close */}
-          {/* Print - Book Data Inputs */}
-          {input.subcategory === "book" && (
+          {/* Jewerly - Any Data Inputs Close */}
+          {/* Print - Any Data Inputs */}
+          {input.category === "print" && (
             <div className="DetailsEditable_form_block">
+              <label>Title</label>
               <input
-                name="print-book-author"
+                name="print-any-title"
                 type="text"
-                placeholder="Author"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
+              <label>Author</label>
               <input
-                name="print-book-edition"
+                name="print-any-author"
                 type="text"
-                placeholder="Edition"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Publisher</label>
+              <input
+                name="print-any-publisher"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Year</label>
+              <input
+                name="print-any-year"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Valorization</label>
+              <input
+                name="print-any-valorization"
+                type="text"
+                placeholder=""
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
               />
             </div>
           )}
           {/* Print - Book Data Inputs Close */}
-          {/* ========== Category Data Closes ========== */}
+          {/* ========== Category Data Any Closes ========== */}
         </div>
-        <div>
+        <>
           {/* ============================================================ */}
           {/* ============================================================ */}
           {/* ========== Sub-Category Data ========== */}
           {/* Gem - Esmerald Data Inputs */}
           {input.subcategory === "esmerald" && (
             <div className="DetailsEditable_form_block margin-bottom-1">
-              <h3>Esmerald Color graduation [1-6]</h3>
+              <label>Esmerald color graduation [1-6]</label>
               <select
-                name="esmerald-color-graduation"
+                name="gem-esmerald-color-graduation"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -352,13 +397,262 @@ const NewFile = () => {
                 <option value="5">5 - Moderately bluish green</option>
                 <option value="6">6 - Very teal green</option>
               </select>
+              <label>Esmerald tone graduation [1-7]</label>
+              <select
+                name="gem-esmerald-tone-graduation"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">1 - Exremely low</option>
+                <option value="2">2 - Very Low</option>
+                <option value="3">3 - Low</option>
+                <option value="4">4 - Moderate</option>
+                <option value="5">5 - High</option>
+                <option value="6">6 - Very High</option>
+                <option value="7">7 - Extremely High</option>
+              </select>
+              <label>Esmerald color saturation [1-6]</label>
+              <select
+                name="gem-esmerald-color-saturation"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">1 - Exremely low</option>
+                <option value="2">2 - Very Low</option>
+                <option value="3">3 - Low</option>
+                <option value="4">4 - High</option>
+                <option value="5">5 - Very High</option>
+                <option value="6">6 - Extremely High</option>
+              </select>
+              <label>Percent of surface gloss due to internal reflection</label>
+              <input
+                name="gem-esmerald-percent-internalreflection"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Percent of window surface</label>
+              <input
+                name="gem-esmerald-percent-window?"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Percent of extintion</label>
+              <input
+                name="gem-esmerald-percent-extintion?"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Percent of dispersion</label>
+              <input
+                name="gem-esmerald-percent-dispersion"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Presence of zones of color change [1-4]</label>
+              <select
+                name="gem-esmerald-zonesofcolorchange"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">1 - Absent</option>
+                <option value="2">2 - Slight</option>
+                <option value="3">3 - Present</option>
+                <option value="4">4 - Abundant</option>
+              </select>
+              <label>Color concentration effect on the perimeter [1-4]</label>
+              <select
+                name="gem-esmerald-zonesofcolorchange"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">1 - Absent</option>
+                <option value="2">2 - Slight</option>
+                <option value="3">3 - Present</option>
+                <option value="4">4 - Abundant</option>
+              </select>
+            </div>
+          )}
+          {/* Part 2 */}
+          {input.subcategory === "esmerald" && (
+            <div className="DetailsEditable_form_block margin-bottom-1">
+              <label>Esmerald cut shape</label>
+              <select
+                name="gem-esmerald-cut-shape"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">Drop</option>
+                <option value="2">Esmerald</option>
+                <option value="3">Round</option>
+                <option value="4">Princess</option>
+                <option value="5">Heart</option>
+                <option value="6">Marquise</option>
+                <option value="7">Elongated esmerald</option>
+                <option value="8">Oval</option>
+                <option value="9">Other</option>
+              </select>
+              <label>Esmerald cut symmetry</label>
+              <select
+                name="gem-esmerald-cut-symmetry"
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+                defaultValue={""}
+              >
+                <option value="">Select</option>
+                <option value="1">Drop</option>
+                <option value="2">Esmerald</option>
+                <option value="3">Round</option>
+                <option value="4">Princess</option>
+                <option value="5">Heart</option>
+                <option value="6">Marquise</option>
+                <option value="7">Elongated esmerald</option>
+                <option value="8">Oval</option>
+                <option value="9">Other</option>
+              </select>
             </div>
           )}
           {/* Gem - Esmerald Data Inputs Close */}
           {/* ============================================================ */}
+          {/* Jewerly - ** Data Inputs */}
+          {/* Jewerly - ** Data Inputs Close */}
           {/* ============================================================ */}
-        </div>
-          <button className="button-dark width-100 padding-3 flex-justifyCenter margin-bottom-3">Create</button>
+          {/* Print - Book Data Inputs */}
+          {input.subcategory === "book" && (
+            <div className="DetailsEditable_form_block">
+              <label>Book Identification Type</label>
+              <select
+                name="print-book-idtype"
+                className="border-radius-2 border-color-2"
+                placeholder=""
+                onChange={handleChange}
+              >
+                <option value="isbn10" defaultChecked={true}>
+                  ISBN 10
+                </option>
+                <option value="isbn13">ISBN 13</option>
+                <option value="issn">ISSN</option>
+              </select>
+              <label>Book Identification Number</label>
+              <input
+                name="print-book-id"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Language</label>
+              <input
+                name="print-book-language"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Edition</label>
+              <input
+                name="print-book-edition"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Total number of pages</label>
+              <input
+                name="print-book-pages"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Book height [cm]</label>
+              <input
+                name="print-book-height"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Book width [cm]</label>
+              <input
+                name="print-book-width"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Book tickness [cm]</label>
+              <input
+                name="print-book-tickness"
+                type="number"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+            </div>
+          )}
+          {/* Print - Book Data Inputs Close */}
+          {/* Print - Map Data Inputs */}
+          {input.subcategory === "map" && (
+            <div className="DetailsEditable_form_block">
+              <label>Map Edition</label>
+              <input
+                name="print-map-edition"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Map Scale</label>
+              <input
+                name="print-map-scale"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Map width [cm]</label>
+              <input
+                name="print-map-width"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+              <label>Map height [cm]</label>
+              <input
+                name="print-map-height"
+                type="text"
+                placeholder=""
+                className="border-radius-2 border-color-2"
+                onChange={handleChange}
+              />
+            </div>
+          )}
+          {/* Print - Map Data Inputs Close */}
+          {/* ============================================================ */}
+          {/* ============================================================ */}
+        </>
+        <button className="button-dark width-100 padding-3 flex-justifyCenter margin-bottom-3">
+          Create
+        </button>
       </div>
     </div>
   );
