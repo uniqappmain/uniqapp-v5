@@ -1,30 +1,37 @@
-Jul 4
+Jul 7
+- Json Sample.
+
 - Home tab. Home Cards.
 - Details Edit.
 - Details Explore & Modal.
 - Implement QR.
 
-Jul 5
-- About / Contact page
-- Support page
-- Privacy Terms page
 - Explore Demo page
+- Shared files page.
 
-Jul 6
 - Implement Firebase.
 - Implement ImageCompressor.
 - Image uploader update.
 
-Jul 7
-- Shared files page.
+- User request.
+- Details request.
+- Shared request.
 - Explore request.
-- Test all working.
+
 - Transfer modal.
 
+
 Jul 8
-- Fix any.
-- Settings page.
+- All working.
+
+- About / Contact page.
+- Support page.
+- Privacy Terms page.
+
+- Translation File.
+
 - Admin page.
+- Recovery page.
 
 Jul 9
 - Implement Google Books.

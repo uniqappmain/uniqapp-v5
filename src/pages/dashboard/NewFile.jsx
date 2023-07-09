@@ -16,7 +16,7 @@ const NewFile = () => {
   const [input, setInput] = useState({
     category: "generic",
     subcategory: "any",
-    visibility: "",
+    visibility: "private",
     name: "",
   });
 
@@ -27,7 +27,7 @@ const NewFile = () => {
   /*<-- ========== FUNTIONS ========== -->*/
   /*<-- Setting current page -->*/
   useEffect(() => {
-    //setInput({ ...input, subcategory: "any" });
+    setInput({ ...input, subcategory: "any" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input.category]);
 
@@ -190,10 +190,9 @@ const NewFile = () => {
             className="border-radius-2 border-color-2"
             placeholder="Category"
             onChange={handleChange}
+            defaultValue={"private"}
           >
-            <option value="private" defaultChecked={true}>
-              Private
-            </option>
+            <option value="private">Private</option>
             <option value="public">Public</option>
           </select>
           {/* ========== Visibility Close ========== */}
@@ -250,7 +249,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Author</label>
               <input
-                name="artwork-any-author"
+                name="artwork_any_author"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -258,7 +257,7 @@ const NewFile = () => {
               />
               <label>Technique</label>
               <input
-                name="artwork-any-technique"
+                name="artwork_any_technique"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -272,7 +271,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Gem Length [mm]</label>
               <input
-                name="gem-any-length"
+                name="gem_any_length"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -280,7 +279,7 @@ const NewFile = () => {
               />
               <label>Gem Width [mm]</label>
               <input
-                name="gem-any-width"
+                name="gem_any_width"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -288,7 +287,7 @@ const NewFile = () => {
               />
               <label>Gem Height [mm]</label>
               <input
-                name="gem-any-height"
+                name="gem_any_height"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -296,7 +295,7 @@ const NewFile = () => {
               />
               <h5>Gem Weigth [g]</h5>
               <input
-                name="gem-any-weight"
+                name="gem_any_weight"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -310,7 +309,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Gems</label>
               <input
-                name="jewerly-any-gems"
+                name="jewerly_any_gems"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -318,7 +317,7 @@ const NewFile = () => {
               />
               <label>Material</label>
               <input
-                name="jewerly-any-material"
+                name="jewerly_any_material"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -332,7 +331,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Title</label>
               <input
-                name="print-any-title"
+                name="print_any_title"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -340,7 +339,7 @@ const NewFile = () => {
               />
               <label>Author</label>
               <input
-                name="print-any-author"
+                name="print_any_author"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -348,7 +347,7 @@ const NewFile = () => {
               />
               <label>Publisher</label>
               <input
-                name="print-any-publisher"
+                name="print_any_publisher"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -356,7 +355,7 @@ const NewFile = () => {
               />
               <label>Year</label>
               <input
-                name="print-any-year"
+                name="print_any_year"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -364,7 +363,7 @@ const NewFile = () => {
               />
               <label>Valorization</label>
               <input
-                name="print-any-valorization"
+                name="print_any_valorization"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -373,8 +372,8 @@ const NewFile = () => {
             </div>
           )}
           {/* Print - Book Data Inputs Close */}
-          {/* ========== Category Data Any Closes ========== */}
         </div>
+        {/* ========== Category Data Any Closes ========== */}
         <>
           {/* ============================================================ */}
           {/* ============================================================ */}
@@ -384,7 +383,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block margin-bottom-1">
               <label>Esmerald color graduation [1-6]</label>
               <select
-                name="gem-esmerald-color-graduation"
+                name="gem_esmerald_color_graduation"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -399,7 +398,7 @@ const NewFile = () => {
               </select>
               <label>Esmerald tone graduation [1-7]</label>
               <select
-                name="gem-esmerald-tone-graduation"
+                name="gem_esmerald_tone_graduation"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -415,7 +414,7 @@ const NewFile = () => {
               </select>
               <label>Esmerald color saturation [1-6]</label>
               <select
-                name="gem-esmerald-color-saturation"
+                name="gem_esmerald_color_saturation"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -430,7 +429,7 @@ const NewFile = () => {
               </select>
               <label>Percent of surface gloss due to internal reflection</label>
               <input
-                name="gem-esmerald-percent-internalreflection"
+                name="gem_esmerald_percent_internalreflection"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -438,7 +437,7 @@ const NewFile = () => {
               />
               <label>Percent of window surface</label>
               <input
-                name="gem-esmerald-percent-window?"
+                name="gem_esmerald_percent_window"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -446,7 +445,7 @@ const NewFile = () => {
               />
               <label>Percent of extintion</label>
               <input
-                name="gem-esmerald-percent-extintion?"
+                name="gem_esmerald_percent_extintion"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -454,7 +453,7 @@ const NewFile = () => {
               />
               <label>Percent of dispersion</label>
               <input
-                name="gem-esmerald-percent-dispersion"
+                name="gem_esmerald_percent_dispersion"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -462,7 +461,7 @@ const NewFile = () => {
               />
               <label>Presence of zones of color change [1-4]</label>
               <select
-                name="gem-esmerald-zonesofcolorchange"
+                name="gem_esmerald_zonesofcolorchange"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -475,7 +474,7 @@ const NewFile = () => {
               </select>
               <label>Color concentration effect on the perimeter [1-4]</label>
               <select
-                name="gem-esmerald-zonesofcolorchange"
+                name="gem_esmerald_zonesofcolorchange"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -493,7 +492,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block margin-bottom-1">
               <label>Esmerald cut shape</label>
               <select
-                name="gem-esmerald-cut-shape"
+                name="gem_esmerald_cut_shape"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -511,7 +510,7 @@ const NewFile = () => {
               </select>
               <label>Esmerald cut symmetry</label>
               <select
-                name="gem-esmerald-cut-symmetry"
+                name="gem_esmerald_cut_symmetry"
                 className="border-radius-2 border-color-2"
                 onChange={handleChange}
                 defaultValue={""}
@@ -539,7 +538,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Book Identification Type</label>
               <select
-                name="print-book-idtype"
+                name="print_book_idtype"
                 className="border-radius-2 border-color-2"
                 placeholder=""
                 onChange={handleChange}
@@ -552,7 +551,7 @@ const NewFile = () => {
               </select>
               <label>Book Identification Number</label>
               <input
-                name="print-book-id"
+                name="print_book_id"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -560,7 +559,7 @@ const NewFile = () => {
               />
               <label>Language</label>
               <input
-                name="print-book-language"
+                name="print_book_language"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -568,7 +567,7 @@ const NewFile = () => {
               />
               <label>Edition</label>
               <input
-                name="print-book-edition"
+                name="print_book_edition"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -576,7 +575,7 @@ const NewFile = () => {
               />
               <label>Total number of pages</label>
               <input
-                name="print-book-pages"
+                name="print_book_pages"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -584,7 +583,7 @@ const NewFile = () => {
               />
               <label>Book height [cm]</label>
               <input
-                name="print-book-height"
+                name="print_book_height"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -592,7 +591,7 @@ const NewFile = () => {
               />
               <label>Book width [cm]</label>
               <input
-                name="print-book-width"
+                name="print_book_width"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -600,7 +599,7 @@ const NewFile = () => {
               />
               <label>Book tickness [cm]</label>
               <input
-                name="print-book-tickness"
+                name="print_book_tickness"
                 type="number"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -614,7 +613,7 @@ const NewFile = () => {
             <div className="DetailsEditable_form_block">
               <label>Map Edition</label>
               <input
-                name="print-map-edition"
+                name="print_map_edition"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -622,7 +621,7 @@ const NewFile = () => {
               />
               <label>Map Scale</label>
               <input
-                name="print-map-scale"
+                name="print_map_scale"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -630,7 +629,7 @@ const NewFile = () => {
               />
               <label>Map width [cm]</label>
               <input
-                name="print-map-width"
+                name="print_map_width"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -638,7 +637,7 @@ const NewFile = () => {
               />
               <label>Map height [cm]</label>
               <input
-                name="print-map-height"
+                name="print_map_height"
                 type="text"
                 placeholder=""
                 className="border-radius-2 border-color-2"
@@ -650,7 +649,7 @@ const NewFile = () => {
           {/* ============================================================ */}
           {/* ============================================================ */}
         </>
-        <button className="button-dark width-100 padding-3 flex-justifyCenter margin-bottom-3">
+        <button className="button-green width-100 padding-3 flex-justifyCenter margin-bottom-3">
           Create
         </button>
       </div>

@@ -7,6 +7,11 @@ import home from "./house.svg";
 import explore from "./compass.svg";
 import collections from "./collection.svg";
 import back from "./arrow-left-short.svg";
+import transfer from "./arrow-down-up.svg";
+import qr from "./qr-code.svg";
+import pdf from "./filetype-pdf.svg";
+import edit from "./pencil-square.svg";
+import trash from "./trash.svg";
 
 const Icons = {
   Vault: vault,
@@ -18,6 +23,11 @@ const Icons = {
   Explore: explore,
   Collections: collections,
   Back: back,
+  Transfer: transfer,
+  QR: qr,
+  PDF: pdf,
+  Edit: edit,
+  Trash: trash,
 };
 
 export default Icons;

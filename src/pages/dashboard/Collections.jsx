@@ -97,11 +97,12 @@ const Collections = () => {
           <option value="" defaultChecked>
             All
           </option>
-          <option value="art">Art</option>
-          <option value="books">Books</option>
+          <option value="antique">Antique</option>
+          <option value="artwork">Artwork</option>
+          <option value="gem">Gem</option>
+          <option value="home">Home</option>
           <option value="jewerly">Jewerly</option>
-          <option value="antiques">Antiques</option>
-          <option value="others">Others</option>
+          <option value="print">Print</option>
         </select>
         <Link to={"../../../dashboard/new-file"}>
           <button className="border-radius-3 button-green">New File</button>
@@ -119,6 +120,7 @@ const Collections = () => {
           </div>
         ))}
       </div>
+      {/* PREVIEW MODAL */}
       {previewModal && (
         <div className="PreviewModal">
           <div className="PreviewModal_container box-shadow-2 background-color-grey-10">
@@ -146,6 +148,7 @@ const Collections = () => {
           </div>
         </div>
       )}
+      {/* PREVIEW MODAL CLOSE */}
     </div>
   );
 };
