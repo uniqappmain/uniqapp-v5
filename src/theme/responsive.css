@@ -102,6 +102,7 @@
   align-items: flex-start;
   gap: 4px;
   border-right: thin solid rgb(240, 240, 240);
+  z-index: 2;
 }
 .Nav_short {
   width: 140px;
@@ -395,6 +396,11 @@
   justify-content: flex-start;
   gap: 24px;
 }
+@media (max-width: 840px) {
+  .flex-wrap-list {
+    justify-content: center;
+  }
+}
 
 /*<-- File Card -->*/
 .FileCard {
@@ -406,10 +412,13 @@
   display: flex;
   border-radius: 0.4rem;
 }
-@media (max-width: 840px) {
-  .flex-wrap-list {
-    justify-content: center;
-  }
+.FileCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FileCard:hover img {
+  width: 120%;
 }
 
 /*<-- Collections -->*/
@@ -555,4 +564,28 @@
   max-width: 420px;
   height: auto;
   margin-bottom: 32px;
+}
+
+/*<-- File Card -->*/
+.HomeCard {
+  position: relative;
+  height: 185px;
+  width: 312px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.1s;
+  display: flex;
+  border-radius: 0.4rem;
+  z-index: 0;
+}
+.HomeCard img {
+  width: 100%;
+  object-fit: cover;
+}
+.HomeCard div {
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
 }

@@ -107,7 +107,7 @@ const Headbar = () => {
       {/* ASIDE */}
       {isAsideOpen && (
         <div className="AsideMenu_background">
-          <div className="AsideMenu background-color-grey-9 box-shadow-1">
+          <div className="AsideMenu background-color-grey-9 box-shadow-2">
             <button
               className="border-radius-3 margin-right-0"
               onClick={() => {
@@ -210,7 +210,7 @@ const Headbar = () => {
       )}
       {/* PROFILE */}
       {isProfileOpen && (
-        <div className="ProfileMenu background-color-grey-10 border-radius-2 box-shadow-1 padding-3 gap-1">
+        <div className="ProfileMenu background-color-grey-9 border-radius-2 box-shadow-2 padding-3 gap-1">
           <img src={Icons.Profile} alt="" className="width-20" />
           <h2>
             {userProfile?.first}

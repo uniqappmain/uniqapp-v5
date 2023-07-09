@@ -26,8 +26,8 @@ const Dashboard = () => {
   return (
     <>
       <Nav />
-      <div className="Dashboard_page">
-        <Outlet />
+      <div className="Dashboard_page background-pattern-2">
+        <Outlet/>
       </div>
     </>
   );

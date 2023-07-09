@@ -26,7 +26,7 @@
   --border-color-0: var(--color-grey-10);
   --border-color-1: var(--color-grey-8);
   --border-color-2: var(--color-grey-6);
-  --border-color-blue-1: var(--color-blue-1)
+  --border-color-blue-1: var(--color-blue-1);
 
   /*<-- Box shadow -->*/
   --box-shadow-1: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -201,6 +201,17 @@ textarea:disabled {
     ),
     repeating-linear-gradient(#ffffff55, #ffffff);
 }
+.background-pattern-2 {
+  background-color: #f7f7f7;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 9.5px,
+    #fcfcfc 9.5px,
+    #f9f9f9 47.5px
+  );
+}
 .background-gradinet-1 {
   background: linear-gradient(330deg, var(--color-grey-8), var(--color-grey-9));
 }
@@ -284,4 +295,32 @@ textarea:disabled {
 }
 .Link-dark:hover {
   color: var(--color-grey-2);
+}
+
+.background-color-gradient-1 {
+  background: rgb(255, 91, 91);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 91, 91, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.background-color-gradient-2 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.background-color-gradient-3 {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
