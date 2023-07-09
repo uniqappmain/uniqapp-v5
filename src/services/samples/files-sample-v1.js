@@ -37,7 +37,8 @@ const filesSample = [
   },
   {
     id: "3",
-    category: "Books",
+    category: "print",
+    subcategory: "book",
     name: "Lord of the Rings",
     description: "First edition",
     imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",

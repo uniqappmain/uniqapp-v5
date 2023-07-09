@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8ef43669.css",
-    "main.js": "/static/js/main.20e9ab7f.js",
+    "main.js": "/static/js/main.cf5ec0ef.js",
     "static/media/esmeralds.jpg": "/static/media/esmeralds.25b84b24f8712e18bc40.jpg",
     "static/media/ring.png": "/static/media/ring.846600b5ebcea46a3193.png",
     "static/media/filetype-pdf.svg": "/static/media/filetype-pdf.f3c899afc6da65509c0c48e62929b7f5.svg",
@@ -20,10 +20,10 @@
     "static/media/x-lg.svg": "/static/media/x-lg.f520e54c746f7505bec401e45a68a2de.svg",
     "static/media/arrow-left-short.svg": "/static/media/arrow-left-short.dd169f9b0bb3667366c2b518320f8416.svg",
     "main.8ef43669.css.map": "/static/css/main.8ef43669.css.map",
-    "main.20e9ab7f.js.map": "/static/js/main.20e9ab7f.js.map"
+    "main.cf5ec0ef.js.map": "/static/js/main.cf5ec0ef.js.map"
   },
   "entrypoints": [
     "static/css/main.8ef43669.css",
-    "static/js/main.20e9ab7f.js"
+    "static/js/main.cf5ec0ef.js"
   ]
 }
