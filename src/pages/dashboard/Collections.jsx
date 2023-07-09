@@ -7,6 +7,7 @@ import { AppContext } from "../../context/AppContext";
 import { UserContext } from "../../context/UserContext";
 import { Link } from "react-router-dom";
 import Icons from "../../assets/icons/Icons";
+import Images from "../../assets/images/Images";
 
 const Collections = () => {
   /*<-- ========== PROVIDERS ========== -->*/
@@ -116,14 +117,17 @@ const Collections = () => {
               previewOpen(file);
             }}
           >
-            <FileCard className="flex-center border-width-0 padding-0 local-image-button"></FileCard>
+            <FileCard
+              className="flex-center border-width-0 padding-0 local-image-button"
+              ImageURL={file.imagesURL[0]}
+            />
           </div>
         ))}
       </div>
       {/* PREVIEW MODAL */}
       {previewModal && (
         <div className="PreviewModal">
-          <div className="PreviewModal_container box-shadow-2 background-color-grey-10">
+          <div className="PreviewModal_container box-shadow-2 background-color-grey-10 flex-col-center-start">
             <div className="Preview_header">
               <h2 className="text-weight-bold margin-left-2">
                 {previewFile?.name}
@@ -143,6 +147,15 @@ const Collections = () => {
                 >
                   <img src={Icons.Close} alt="" />
                 </button>
+              </div>
+            </div>
+            <div className="ModalGallery margin-top-3">
+              <img src={Images.Esmearlds} alt="" />
+              <div className="flex-wrap-list margin-top-2">
+                <img src={Images.Esmearlds} alt="" />
+                <img src={Images.Esmearlds} alt="" />
+                <img src={Images.Esmearlds} alt="" />
+                <img src={Images.Esmearlds} alt="" />
               </div>
             </div>
           </div>

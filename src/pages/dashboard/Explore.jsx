@@ -6,6 +6,7 @@ import { AppContext } from "../../context/AppContext";
 import { UserContext } from "../../context/UserContext";
 import multiLanguage from "../../services/multi-language/multiLanguage-v1";
 import { Link } from "react-router-dom";
+import Images from "../../assets/images/Images";
 
 const Explore = () => {
   /*<-- ========== PROVIDERS ========== -->*/
@@ -56,12 +57,12 @@ const Explore = () => {
         </Link>
       </div>
       <div className="flex-wrap-list margin-bottom-2">
-        <FileCard />
-        <FileCard />
-        <FileCard />
-        <FileCard />
-        <FileCard />
-        <FileCard />
+        <FileCard ImageURL={Images.Esmearlds} />
+        <FileCard ImageURL={Images.Esmearlds} />{" "}
+        <FileCard ImageURL={Images.Esmearlds} />{" "}
+        <FileCard ImageURL={Images.Esmearlds} />{" "}
+        <FileCard ImageURL={Images.Esmearlds} />{" "}
+        <FileCard ImageURL={Images.Esmearlds} />
       </div>
     </div>
   );

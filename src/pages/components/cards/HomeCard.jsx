@@ -4,7 +4,7 @@ const HomeCard = ({ name }) => {
   return (
     <div className="HomeCard box-shadow-2">
       <img
-        className="width-100 background-color-grey-7 background-color-gradient-1"
+        className="width-100 background-color-grey-7 background-color-gradient-3"
         src=""
         alt=""
       />

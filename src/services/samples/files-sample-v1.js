@@ -7,6 +7,9 @@ const filesSample = [
     name: "Old Shoes",
     description: "Skull painted",
     imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",
+    imagesURL: [
+      "https://as2.ftcdn.net/v2/jpg/02/24/88/23/1000_F_224882361_NlekL6wfpkiNztLAYKE3IAEiBGMpCzUQ.jpg",
+    ],
   },
   {
     id: "1",
@@ -18,6 +21,9 @@ const filesSample = [
     artwork_any_author: "Vang",
     artwork_any_technique: "Oleo",
     imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",
+    imagesURL: [
+      "https://hips.hearstapps.com/hmg-prod/images/vincent-van-gogh-la-nuit-c3-a9toil-c3-a9e-oil-on-canvas-72-x-92-cm-news-photo-1647355391.jpg",
+    ],
   },
   {
     id: "2",
@@ -25,13 +31,19 @@ const filesSample = [
     name: "Gold Ring",
     description: "24K Gold",
     imagesID: "",
+    imagesURL: [
+      "https://image.reliancejewels.com/Jewels/images/productImages/645/22-karat-gold-ring-large_97e59885385e56cf4a80721763b2da13.jpg",
+    ],
   },
   {
     id: "3",
     category: "Books",
     name: "Lord of the Rings",
     description: "First edition",
-    imagesID: "",
+    imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",
+    imagesURL: [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg",
+    ],
   },
   {
     id: "4",
@@ -54,6 +66,10 @@ const filesSample = [
     gem_esmerald_zonesofcolorchange: "4",
     gem_esmerald_cut_shape: "8",
     gem_esmerald_cut_symmetry: "7",
+    imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",
+    imagesURL: [
+      "https://mundogemas.com/13052-superlarge_default/esmerald-faceted-oval-6x4mm-052ct-ref784mg.jpg",
+    ],
   },
   {
     id: "5",
@@ -66,6 +82,10 @@ const filesSample = [
     gem_any_width: "22",
     gem_any_height: "6",
     gem_any_weight: "12",
+    imagesID: "[24425399_6d9b_4c5e_aca2_3d97d03fad2e]",
+    imagesURL: [
+      "https://www.sharecafe.com.au/wp-content/uploads/2022/05/Gold-nugget.png",
+    ],
   },
 ];
 

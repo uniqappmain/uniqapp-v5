@@ -298,10 +298,10 @@ textarea:disabled {
 }
 
 .background-color-gradient-1 {
-  background: rgb(255, 91, 91);
+  background: rgb(183, 209, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 91, 91, 1) 0%,
+    rgba(183, 209, 255, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   );
@@ -316,11 +316,11 @@ textarea:disabled {
   );
 }
 .background-color-gradient-3 {
-  background: rgb(2, 0, 36);
+  background: rgb(6, 99, 255);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
+    rgba(6, 99, 255, 1) 0%,
+    rgba(49, 49, 190, 1) 45%,
     rgba(0, 212, 255, 1) 100%
   );
 }

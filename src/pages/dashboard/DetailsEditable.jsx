@@ -788,7 +788,7 @@ const DetailsEditable = () => {
               <div className="text-align-center">
                 <div className="flex-center-center">
                   <img
-                    className="width-10  margin-right-1"
+                    className="width-10 margin-right-1"
                     src={Icons.Vault}
                     alt=""
                   />
