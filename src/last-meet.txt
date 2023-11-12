@@ -1,0 +1,5 @@
+1. Categorias: Definición definitiva del arbol + JSON administrador.
+2. Algoritmo para Libros: Consultas a partir de OCR con Google Vision y ChatGPT en Google Books.
+3. Archivado: Control de archivos eliminados.
+4. Certificación en piedra - Provedores: Link de conección entre archivo cliente - Certificado de Provedor.
+5. Generación y descarga de PDF.
